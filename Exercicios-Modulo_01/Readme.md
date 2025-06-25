@@ -1,4 +1,4 @@
-Como executar o arquivo '1.0 - Exercicios.js'
+Como executar os arquivos 'Exercicios.js'
 
 1 - Instale o Node.js na versao v22.14.0
 
