@@ -1,0 +1,79 @@
+/* Estilo geral */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container do formulário */
+#form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Rótulos */
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Inputs, selects e textarea */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Botão */
+button {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a61d1;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #form-container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

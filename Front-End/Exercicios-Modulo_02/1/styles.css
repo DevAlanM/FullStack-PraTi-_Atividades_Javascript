@@ -1,0 +1,144 @@
+/* Fonte geral */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5f7fa;
+  color: #2e2e2e;
+}
+
+/* Estilização de header */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Estilização do conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Seções de missão e visão */
+section, nav {
+  background-color: white;
+  border-left: 5px solid #667eea;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos secundários */
+h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+/* Listas */
+ul, ol {
+  margin: 1rem 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+nav a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Destaque */
+.destaque {
+  font-style: italic;
+  background-color: #fffbea;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#importante {
+  border-top: 4px solid #a884ff; /* tom violeta claro, harmoniza com o tema */
+  padding-top: 1rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2f2f2f;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #564fdb;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #d1d1ff;
+}
+
+/* Ajustar espaçamento do header depois da navbar */
+header {
+  margin-top: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
