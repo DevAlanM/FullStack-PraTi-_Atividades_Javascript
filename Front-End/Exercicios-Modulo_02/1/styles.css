@@ -1,6 +1,20 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GARANTE QUE O BODY E HTML OCUPAM 100% */
+html, body {
+  width: 100%;
+}
+
+
 /* Fonte geral */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Nunito', sans-serif;
   background-color: #f5f7fa;
   color: #2e2e2e;
@@ -64,10 +78,6 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
 /* Destaque */
 .destaque {
   font-style: italic;
@@ -91,11 +101,11 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Navbar */
+/* NAVBAR - ocupa toda largura e sem bordas */
 .navbar {
+  width: 100%;
   background-color: #564fdb;
-  padding: 1rem 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -104,13 +114,16 @@ footer {
   justify-content: center;
   gap: 2rem;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
+  width: 100%;
 }
+
 
 .navbar li {
   display: inline;
 }
 
+/* LINKS ESTILIZADOS */
 .navbar a {
   color: #fff;
   text-decoration: none;
@@ -128,6 +141,58 @@ header {
   margin-top: 0;
 }
 
+/* Container com Flexbox para centralizar */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+/* Grid de imagens */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Estilização dos cards de imagem */
+.galeria figure {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 0;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galeria figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#menu-toggle {
+  display: none;
+  background-color: #564fdb;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  cursor: pointer;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
   header h1 {
@@ -139,6 +204,32 @@ header {
   }
 
   section {
+    padding: 1rem;
+  }
+   .navbar ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    background-color: #564fdb;
+    width: 100%;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+   .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+
+  .galeria-container {
     padding: 1rem;
   }
 }

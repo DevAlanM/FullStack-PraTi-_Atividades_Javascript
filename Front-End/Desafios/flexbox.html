@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Página Pessoal</title>
+  <link rel="stylesheet" href="flexbox.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="nav-content">
+        <img class="img-logo" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Localização</a></li>
+                    </ul>
+                </nav>
+    </div>
+    
+  <header>
+    <h1>Bem-vindo à Minha Página</h1>
+    <p>Sou uma pessoa apaixonada por tecnologia, natureza e música!</p>
+  </header>
+  <main>
+    <section class="cards">
+        <div class="card">
+            <h2>Missão</h2>
+            <p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni optio perspiciatis harum, necessitatibus sequi id incidunt corrupti fuga voluptate? Quos beatae voluptatum maiores neque quibusdam, cumque officia facere eos vel..</p>
+        </div>
+        <div class="card">
+            <h2>Cultura</h2>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti consectetur quidem id ea animi voluptate non voluptatibus, omnis aliquid, dignissimos sunt nihil ex eligendi minus nesciunt dicta quibusdam sint.</p>
+        </div>
+        <div class="card">
+            <h2>Valores</h2>
+            <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita obcaecati error, itaque nesciunt rem fugiat asperiores ratione vitae unde optio consequuntur dolores suscipit enim mollitia accusantium debitis quos, voluptatem veritatis?</p>
+        </div>      
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.navbar');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
